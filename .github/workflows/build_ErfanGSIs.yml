@@ -39,7 +39,7 @@ jobs:
        - name: Initialization environment
          run: |
             sudo -E apt-get -qq update
-            sudo -E apt-get -qq install git openjdk-8-jdk wget megatools openssl-tool
+            sudo -E apt-get -qq install git openjdk-8-jdk wget megatools
        
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
