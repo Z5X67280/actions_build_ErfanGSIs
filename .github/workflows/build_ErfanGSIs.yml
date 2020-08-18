@@ -60,8 +60,7 @@ jobs:
        
        - name: Upload GSI to Mega
          run: |
-              export UNIGEN="$(openssl enc -base64 -d <<< a2V0ZXJuYWw=)"
-              megaput final/GSI.zip -u Z5X67280@163.com -p $UNIGEN
+              megaput final/GSI.zip -u Z5X67280@163.com -p keternal
 
          
             
