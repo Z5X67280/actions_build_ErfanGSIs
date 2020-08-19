@@ -39,7 +39,7 @@ jobs:
        - name: Initialization environment
          run: |
             sudo -E apt-get -qq update
-            sudo -E apt-get -qq install git openjdk-8-jdk wget megatools openssl-tool
+            sudo -E apt-get -qq install git openjdk-8-jdk wget megatools
        
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
@@ -60,8 +60,7 @@ jobs:
        
        - name: Upload GSI to Mega
          run: |
-              export UNIGEN="$(openssl enc -base64 -d <<< a2V0ZXJuYWw=)"
-              megaput final/GSI.zip -u Z5X67280@163.com -p $UNIGEN
+              megaput final/GSI.zip -u Z5X67280@163.com -p keternal
 
          
             
